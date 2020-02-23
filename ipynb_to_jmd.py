@@ -4,14 +4,18 @@
 # In[1]:
 
 
-import re, json
+import re, json, argparse
 
 
 # In[2]:
-
-
-InputFile = "empty.ipynb"
-OutputFile = "empty.jmd"
+parser = argparse.ArgumentParser(description='Convert ipynb to jmd.')
+parser.add_argument('-i', default="empty.ipynb",
+                    help='Input location')
+parser.add_argument('-o', default="empty.jmd",
+                    help='Output location')
+args = parser.parse_args()
+InputFile = args.i
+OutputFile = args.o
 
 
 # In[3]:
