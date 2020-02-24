@@ -4,7 +4,7 @@
 # In[26]:
 
 
-import re, json
+import re, json, argparse
 
 
 # In[26]:
@@ -22,8 +22,8 @@ OutputFile = args.o
 # In[27]:
 
 
-assert InputFile[-6:] == ".ipynb"
-assert OutputFile[-4:] == ".jmd"
+assert OutputFile[-6:] == ".ipynb"
+assert InputFile[-4:] == ".jmd"
 
 
 # In[27]:
